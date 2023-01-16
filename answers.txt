@@ -1,7 +1,109 @@
 
 Project 0
-Name:
-Username:
-Student Id:
+Name: Danyili Hong
+Username: dh48
+Student Id: 2612521
 
 Step 3. -------------------------------------------
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+    unsigned BIG_NUMBER = 10000000;
+    string name = "Danyili Hong";
+    char c = 'H';
+    double d = 3.1415;
+    bool b = false;
+    long l = 0;
+
+    return 0;
+}
+
+Step 4. -------------------------------------------
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+    unsigned BIG_NUMBER = 10000000;
+    string name = "Danyili Hong";
+    char c = 'H';
+    double d = 3.1415;
+    bool b = false;
+    long l = 0;
+
+    unsigned *ptr = &BIG_NUMBER;
+    cout << ptr << endl;
+    string *ptr1 = &name;
+    cout << ptr1 << endl;
+    char *ptr2 = &c;
+    cout << ptr2 << endl;
+    double *ptr3 = &d;
+    cout << ptr3 << endl;
+    bool *ptr4 = &b;
+    cout << ptr4 << endl;
+    long *ptr5 = &l;
+    cout << ptr5 << endl;
+
+    return 0;
+}
+
+0x7fffe68bd0dc
+0x7fffe68bd120
+H
+0x7fffe68bd0e0
+0x7fffe68bd0db
+0x7fffe68bd0e8
+
+Step 5. -------------------------------------------
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main(){
+    int number = 37;
+    cout << oct << number <<endl;
+    cout << dec << number <<endl;
+    cout << hex << number << endl;
+}
+
+45
+37
+25
+
+Step 6. -------------------------------------------
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main(){
+    float a[20] = {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20};
+    cout << "size of an array of 20 floats is" << sizeof(a) << endl;
+
+
+}
+
+size of an array of 20 floats is80
+
+Step 7. -------------------------------------------
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main(){
+    float a[20] = {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20};
+    cout << "size of an array of 20 floats is" << sizeof(a) << endl;
+
+    float *ptr = &a[7];
+    a[7] = 17.771;
+    cout << a[7] << endl;
+    cout << ptr << endl;
+
+
+
+}
+
+size of an array of 20 floats is80
+17.771
+0x7fffd402b1ac
